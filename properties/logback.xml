@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+	    <encoder>
+	      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+	    </encoder>
+	</appender>
+
+	<appender name="rollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>./log/NettyGuide.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>./log/NettyGuide.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!--<maxHistory>6</maxHistory>-->
+		</rollingPolicy>
+		<encoder charset="UTF-8">
+			<pattern>%date{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- project default level -->
+	<logger name="com" level="INFO" />
+
+	<root level="INFO">
+		<appender-ref ref="rollingFile" />
+		<appender-ref ref="STDOUT" />
+	</root>
+</configuration>

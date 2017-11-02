@@ -6,6 +6,16 @@
         <element id="directory" name="classes">
           <element id="module-output" name="NettyGuide" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: io.netty:netty-all:4.1.6.Final" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.7" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.1.2" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.1.2" />
+          <element id="library" level="project" name="Maven: org.slf4j:log4j-over-slf4j:1.7.7" />
+          <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.7" />
+          <element id="library" level="project" name="Maven: org.slf4j:jul-to-slf4j:1.7.7" />
+          <element id="library" level="project" name="Maven: com.googlecode.log4jdbc:log4jdbc:1.2" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/NettyGuide/META-INF/MANIFEST.MF" />
