@@ -1,0 +1,21 @@
+2017-11-03 09:33:04.838 [main] WARN  io.netty.bootstrap.Bootstrap - Unknown channel option: SO_BACKLOG=128
+2017-11-03 09:33:27.174 [main] WARN  io.netty.bootstrap.Bootstrap - Unknown channel option: SO_BACKLOG=128
+2017-11-03 09:36:45.274 [main] WARN  io.netty.bootstrap.Bootstrap - Unknown channel option: SO_BACKLOG=128
+2017-11-03 11:31:49.624 [nioEventLoopGroup-2-1] WARN  i.n.channel.DefaultChannelPipeline - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_73]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_73]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_73]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_73]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_73]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:366) ~[netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:118) ~[netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:651) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144) [netty-all-4.1.6.Final.jar:4.1.6.Final]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_73]

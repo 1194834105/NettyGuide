@@ -51,7 +51,6 @@ public class HttpFileServerHandler extends SimpleChannelInboundHandler<HttpObjec
 
             //清空StringBuilder
             sbresponsetext.setLength(0);
-            sbresponsetext.append("白夜行网盘 欢迎您 ！");
 
             //创建HttpPostRequestDecoder
             try {
@@ -61,9 +60,7 @@ public class HttpFileServerHandler extends SimpleChannelInboundHandler<HttpObjec
                 sbresponsetext.append(e.getMessage());
                 //若发生解码异常，则发送响应给浏览器
                 writeResponse(ctx.channel());
-                //关闭通道
                 ctx.channel().close();
-                System.out.println("创建HttpPostRequestDecoder 出错 ！");
                 return;
             }
         }
@@ -115,7 +112,6 @@ public class HttpFileServerHandler extends SimpleChannelInboundHandler<HttpObjec
         sbresponsetext.append("</head>\r\n");
         sbresponsetext.append("<body>");
 
-        sbresponsetext.append("<font size=\"10\" color=\"blue\">白夜行网盘");
         sbresponsetext.append("<FORM ACTION=\"/formpostmultipart\" ENCTYPE=\"multipart/form-data\" METHOD=\"POST\">");
         sbresponsetext.append("<input type=hidden name=getform value=\"POST\">");
         sbresponsetext.append("<table border=\"0\">");
