@@ -1,21 +1,27 @@
-2017-11-03 09:33:04.838 [main] WARN  io.netty.bootstrap.Bootstrap - Unknown channel option: SO_BACKLOG=128
-2017-11-03 09:33:27.174 [main] WARN  io.netty.bootstrap.Bootstrap - Unknown channel option: SO_BACKLOG=128
-2017-11-03 09:36:45.274 [main] WARN  io.netty.bootstrap.Bootstrap - Unknown channel option: SO_BACKLOG=128
-2017-11-03 11:31:49.624 [nioEventLoopGroup-2-1] WARN  i.n.channel.DefaultChannelPipeline - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
-java.io.IOException: 远程主机强迫关闭了一个现有的连接。
-	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_73]
-	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_73]
-	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_73]
-	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_73]
-	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_73]
-	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.6.Final.jar:4.1.6.Final]
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[netty-all-4.1.6.Final.jar:4.1.6.Final]
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:366) ~[netty-all-4.1.6.Final.jar:4.1.6.Final]
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:118) ~[netty-all-4.1.6.Final.jar:4.1.6.Final]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:651) [netty-all-4.1.6.Final.jar:4.1.6.Final]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574) [netty-all-4.1.6.Final.jar:4.1.6.Final]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488) [netty-all-4.1.6.Final.jar:4.1.6.Final]
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450) [netty-all-4.1.6.Final.jar:4.1.6.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873) [netty-all-4.1.6.Final.jar:4.1.6.Final]
-	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144) [netty-all-4.1.6.Final.jar:4.1.6.Final]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_73]
+2018-01-10 15:54:20.460 [nioEventLoopGroup-2-1] INFO  m.t.s.CdLoraGatewayServer - netty启动成功！
+2018-01-10 16:16:06.779 [nioEventLoopGroup-2-1] INFO  m.t.s.CdLoraGatewayServer - netty启动成功！
+2018-01-10 16:16:12.530 [nioEventLoopGroup-3-1] INFO  m.t.s.CdLoraGatewayServerHandler - SimpleServerHandler.channelRead
+2018-01-10 16:16:14.551 [nioEventLoopGroup-3-2] INFO  m.t.s.CdLoraGatewayServerHandler - SimpleServerHandler.channelRead
+2018-01-10 16:16:16.562 [nioEventLoopGroup-3-3] INFO  m.t.s.CdLoraGatewayServerHandler - SimpleServerHandler.channelRead
+2018-01-10 16:16:18.570 [nioEventLoopGroup-3-4] INFO  m.t.s.CdLoraGatewayServerHandler - SimpleServerHandler.channelRead
+2018-01-10 16:25:45.612 [nioEventLoopGroup-2-1] INFO  m.t.s.CdLoraGatewayServer - netty启动成功！
+2018-01-10 16:26:11.874 [nioEventLoopGroup-3-1] INFO  m.t.s.CdLoraGatewayServerHandler - SimpleServerHandler.channelRead
+2018-01-10 16:26:21.239 [nioEventLoopGroup-3-1] INFO  m.t.s.CdLoraGatewayServerHandler - SimpleServerHandler.channelRead
+2018-01-10 16:27:24.524 [nioEventLoopGroup-2-1] INFO  m.t.s.CdLoraGatewayServer - netty启动成功！
+2018-01-10 16:27:26.055 [nioEventLoopGroup-3-1] INFO  m.t.s.CdLoraGatewayServerHandler - SimpleServerHandler.channelRead
+2018-01-10 16:27:28.028 [nioEventLoopGroup-3-1] INFO  m.t.s.CdLoraGatewayServerHandler - SimpleServerHandler.channelRead
+2018-01-10 16:27:30.029 [nioEventLoopGroup-3-1] INFO  m.t.s.CdLoraGatewayServerHandler - SimpleServerHandler.channelRead
+2018-01-10 16:27:32.029 [nioEventLoopGroup-3-1] INFO  m.t.s.CdLoraGatewayServerHandler - SimpleServerHandler.channelRead
+2018-01-10 16:27:34.030 [nioEventLoopGroup-3-1] INFO  m.t.s.CdLoraGatewayServerHandler - SimpleServerHandler.channelRead
+2018-01-10 16:27:36.031 [nioEventLoopGroup-3-1] INFO  m.t.s.CdLoraGatewayServerHandler - SimpleServerHandler.channelRead
+2018-01-10 16:27:37.574 [nioEventLoopGroup-3-2] INFO  m.t.s.CdLoraGatewayServerHandler - SimpleServerHandler.channelRead
+2018-01-10 16:27:38.031 [nioEventLoopGroup-3-1] INFO  m.t.s.CdLoraGatewayServerHandler - SimpleServerHandler.channelRead
+2018-01-10 16:27:39.574 [nioEventLoopGroup-3-2] INFO  m.t.s.CdLoraGatewayServerHandler - SimpleServerHandler.channelRead
+2018-01-10 16:27:40.032 [nioEventLoopGroup-3-1] INFO  m.t.s.CdLoraGatewayServerHandler - SimpleServerHandler.channelRead
+2018-01-10 16:27:41.574 [nioEventLoopGroup-3-2] INFO  m.t.s.CdLoraGatewayServerHandler - SimpleServerHandler.channelRead
+2018-01-10 16:27:42.032 [nioEventLoopGroup-3-1] INFO  m.t.s.CdLoraGatewayServerHandler - SimpleServerHandler.channelRead
+2018-01-10 16:27:43.575 [nioEventLoopGroup-3-2] INFO  m.t.s.CdLoraGatewayServerHandler - SimpleServerHandler.channelRead
+2018-01-10 16:27:44.033 [nioEventLoopGroup-3-1] INFO  m.t.s.CdLoraGatewayServerHandler - SimpleServerHandler.channelRead
+2018-01-10 16:27:45.575 [nioEventLoopGroup-3-2] INFO  m.t.s.CdLoraGatewayServerHandler - SimpleServerHandler.channelRead
+2018-01-10 16:27:46.034 [nioEventLoopGroup-3-1] INFO  m.t.s.CdLoraGatewayServerHandler - SimpleServerHandler.channelRead
+2018-01-10 16:27:48.034 [nioEventLoopGroup-3-1] INFO  m.t.s.CdLoraGatewayServerHandler - SimpleServerHandler.channelRead
