@@ -19,12 +19,7 @@ public class SocketToNettyServerHandler extends ChannelInboundHandlerAdapter {
     public void channelRead(ChannelHandlerContext ctx, Object msg) {
         logger.info("SimpleServerHandler.channelRead");
 
-        ByteBuf result = (ByteBuf) msg;
-        byte[] result1 = new byte[result.readableBytes()];
-
-        result.readBytes(result1);
-        System.out.println(Arrays.toString(result1));
-        result.release();
+        System.out.println((String) msg);
 
         // 向客户端发送消息
         String response = "success" + System.getProperty("line.separator");
